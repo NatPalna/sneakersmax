@@ -1,5 +1,6 @@
 .cart_container {
   width: 580px;
+  min-height: calc(100vh - 149px);
   padding: 40px;
 }
 

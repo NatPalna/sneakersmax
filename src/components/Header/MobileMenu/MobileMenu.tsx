@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./styles.module.css";
 import { BurgerMenu } from "../BurgerMenu/BurgerMenu";
-import { Link } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 
 export const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,53 +11,53 @@ export const MobileMenu = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container_mobile}>
       <BurgerMenu isOpen={isOpen} setIsOpen={setIsOpen} />
       {isOpen && (
         <div className={styles.mobile_menu}>
-          <nav>
-            <Link
+          <nav className={styles.nav}>
+            <NavHashLink
               to="/sneakermax#catalog"
               className={styles.nav__link}
               onClick={handleLinkClick}
             >
               Каталог
-            </Link>
-            <Link
-              to="/sneakermax#aboutUs"
+            </NavHashLink>
+            <NavHashLink
+              to="/sneakermax#aboutus"
               className={styles.nav__link}
               onClick={handleLinkClick}
             >
               О нас
-            </Link>
-            <Link
+            </NavHashLink>
+            <NavHashLink
               to="/sneakermax#quiz"
               className={styles.nav__link}
               onClick={handleLinkClick}
             >
               Подбор товара
-            </Link>
-            <Link
+            </NavHashLink>
+            <NavHashLink
               to="/sneakermax#team"
               className={styles.nav__link}
               onClick={handleLinkClick}
             >
               Наша команда
-            </Link>
-            <Link
+            </NavHashLink>
+            <NavHashLink
               to="/sneakermax"
               className={styles.nav__link}
               onClick={handleLinkClick}
             >
               Доставка и оплата
-            </Link>
-            <Link
+            </NavHashLink>
+            <NavHashLink
               to="/sneakermax#contacts"
               className={styles.nav__link}
               onClick={handleLinkClick}
             >
               Контакты
-            </Link>
+            </NavHashLink>
           </nav>
         </div>
       )}

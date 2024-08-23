@@ -1,39 +1,39 @@
-import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
+import { NavHashLink } from "react-router-hash-link";
 
 const Nav = () => {
   return (
     <nav className={styles.nav}>
       <ul className={styles.nav_list}>
         <li className={styles.nav__item}>
-          <Link to="/sneakermax#catalog" className={styles.nav__link}>
+          <NavHashLink to="/sneakermax#catalog" className={styles.nav__link}>
             Каталог
-          </Link>
+          </NavHashLink>
         </li>
         <li className={styles.nav__item}>
-          <Link to="/sneakermax#aboutUs" className={styles.nav__link}>
+          <NavHashLink to="/sneakermax#aboutus" className={styles.nav__link}>
             О нас
-          </Link>
+          </NavHashLink>
         </li>
         <li className={styles.nav__item}>
-          <Link to="/sneakermax#quiz" className={styles.nav__link}>
+          <NavHashLink to="/sneakermax#quiz" className={styles.nav__link}>
             Подбор товара
-          </Link>
+          </NavHashLink>
         </li>
         <li className={styles.nav__item}>
-          <Link to="/sneakermax#team" className={styles.nav__link}>
+          <NavHashLink to="/sneakermax#team" className={styles.nav__link}>
             Наша команда
-          </Link>
+          </NavHashLink>
         </li>
         <li className={styles.nav__item}>
-          <Link to="/sneakermax" className={styles.nav__link}>
+          <NavHashLink to="/sneakermax" className={styles.nav__link}>
             Доставка и оплата
-          </Link>
+          </NavHashLink>
         </li>
         <li className={styles.nav__item}>
-          <Link to="/sneakermax#contacts" className={styles.nav__link}>
+          <NavHashLink to="/sneakermax#contacts" className={styles.nav__link}>
             Контакты
-          </Link>
+          </NavHashLink>
         </li>
       </ul>
     </nav>

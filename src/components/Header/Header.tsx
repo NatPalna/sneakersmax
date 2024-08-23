@@ -1,7 +1,6 @@
 import styles from "./styles.module.css";
 import logo from "../../assets/img/logo.svg";
 import cart from "../../assets/img/Cart.svg";
-// import Nav from "../Nav/Nav";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../Redux/store";
 import { sliceCart } from "../../Redux/slices/sliceCart";
@@ -24,7 +23,6 @@ const Header = () => {
           <img src={logo} alt="SneakMax" />
         </Link>
         <div className={styles.header_inner}>
-          {/* <Nav /> */}
           {isMobile ? <MobileMenu /> : <DesktopMenu />}
           <div
             className={styles.header_cart_wrapper}

@@ -62,6 +62,11 @@ export const sliceCart = createSlice({
     closeModal: (state) => {
       state.isOpenModal = false;
     },
+    clearCart: (state) => {
+      state.itemsInCart = [];
+      state.totalPrice = 0;
+      localStorage.setItem("cart", JSON.stringify(state.itemsInCart));
+    },
   },
 });
 

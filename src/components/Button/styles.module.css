@@ -124,6 +124,14 @@
   color: #fff;
 }
 
+.toCart:hover {
+  background-color: #cc4949;
+}
+
+.toCart:active {
+  background-color: #8c2828;
+}
+
 .placeAnOrder {
   border-radius: 4px;
   padding: 2px 47px;

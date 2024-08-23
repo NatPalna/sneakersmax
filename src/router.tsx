@@ -4,8 +4,6 @@ import Home from "./pages/Home";
 import Cart from "./pages/Cart";
 import NotFound from "./pages/NotFound";
 import CatalogP from "./pages/Catalog";
-import Catalog from "./components/Catalog/Catalog";
-import AFewWords from "./components/AFewWords/AFewWords";
 
 const router = createBrowserRouter([
   {
@@ -28,14 +26,6 @@ const router = createBrowserRouter([
         path: "*",
         element: <NotFound />,
       },
-      // {
-      //   path: "#catalog",
-      //   element: <Catalog />,
-      // },
-      // {
-      //   path: "#aboutUs",
-      //   element: <AFewWords />,
-      // },
     ],
   },
 ]);

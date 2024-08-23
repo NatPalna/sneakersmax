@@ -84,7 +84,12 @@ const Cart = () => {
             className={styles.input}
             placeholder="E-mail"
           />
-          <Button type="placeAnOrder" children={"Оформить заказ"}></Button>
+          <Button
+            type="placeAnOrder"
+            actionType="submit"
+            children={"Оформить заказ"}
+            onClick={() => dispatch(sliceCart.actions.clearCart())}
+          ></Button>
         </form>
       </div>
     </section>
