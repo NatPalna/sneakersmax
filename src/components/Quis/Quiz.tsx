@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./styles.module.css";
 import Page1 from "./Page1";
 import Page2 from "./Page2";

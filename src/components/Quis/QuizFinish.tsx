@@ -1,4 +1,3 @@
-import React from "react";
 import { QuizFinishSubTitle, QuizFinishTitle } from "./Quiz";
 import styles from "./styles.module.css";
 import { Button } from "../Button/Button";

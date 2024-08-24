@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { QuizProps, QuizSubTitle, QuizTitle } from "./Quiz";
 import styles from "./styles.module.css";
 import image from "../../assets/img/quiz_q2.jpg";
