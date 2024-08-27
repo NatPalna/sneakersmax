@@ -5,10 +5,6 @@ import image from "../../assets/img/quiz_q2.jpg";
 import { Button } from "../Button/Button";
 
 const Page2: FC<QuizProps> = ({ quizCount, setQuizCount }) => {
-  // function handleClick() {
-  //   setQuizCount(quizCount + 1);
-  //   console.log(quizCount);
-  // }
   const handleClick = () => {
     setQuizCount(quizCount + 1);
   };
