@@ -31,7 +31,6 @@ export const SneakerModal: FC<Props> = ({
 
         setSneakerData(data);
       } catch (error) {
-        console.log("error-> ", error);
       }
     };
 
