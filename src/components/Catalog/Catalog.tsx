@@ -19,7 +19,6 @@ const Catalog = () => {
 
   useEffect(() => {
     dispatch(getSneakers());
-    console.log(sneakers);
   }, []);
 
   const handleShowMore = () => {
