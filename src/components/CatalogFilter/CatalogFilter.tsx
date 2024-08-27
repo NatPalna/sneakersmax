@@ -50,7 +50,6 @@ const CatalogFilter = () => {
 
     const genderFilteredSneakers = priceFilteredSneakers.filter(
       (item: Sneaker) => {
-        console.log(newFilter, data);
         if (
           (newFilter.male && item.gender == "Мужской") ||
           (newFilter.female && item.gender == "Женский")
@@ -62,7 +61,6 @@ const CatalogFilter = () => {
 
     const sizeFilteredSneakers = genderFilteredSneakers.filter(
       (item: Sneaker) => {
-        console.log(getSizes(newFilter));
         if (getSizes(newFilter).some((size) => item.sizes.includes(size))) {
           return true;
         } else return false;
