@@ -31,7 +31,6 @@ const Catalog = () => {
   }, []);
 
   const handleAddToCart = () => {
-    console.log("Добавлено в корзину");
     dispatch(
       addToCart({
         id: sneakerData?.id,
